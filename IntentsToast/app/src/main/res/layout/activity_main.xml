@@ -7,12 +7,40 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Welcome To Activity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="78dp"
+        android:layout_height="39dp"
+        android:onClick="performToast"
+        android:text="Toast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="73dp"
+        android:layout_height="33dp"
+        android:onClick="goToActivityB"
+        android:text="Next Page"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnToast"
+        app:layout_constraintVertical_bias="0.462" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
